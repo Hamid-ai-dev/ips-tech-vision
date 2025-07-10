@@ -1,4 +1,5 @@
 
+import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
@@ -9,8 +10,11 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Hero />
+    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+      <Navigation />
+      <div id="hero">
+        <Hero />
+      </div>
       <About />
       <Services />
       <WhyChooseUs />
