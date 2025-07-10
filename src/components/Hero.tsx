@@ -16,15 +16,15 @@ const Hero = () => {
         }}></div>
       </div>
       
-      <div className="relative container mx-auto px-6 py-12 min-h-screen flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+      <div className="relative container mx-auto px-4 sm:px-6 py-8 sm:py-12 min-h-screen flex items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           {/* Left Content */}
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-6 sm:space-y-8 animate-fade-in text-center lg:text-left">
             <div className="space-y-2">
-              <p className="text-blue-300 font-medium tracking-wide uppercase text-sm">
+              <p className="text-blue-300 font-medium tracking-wide uppercase text-xs sm:text-sm">
                 Founded by Hafiz Muhammad Numair
               </p>
-              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                 IPS
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                   {" "}Technologies
@@ -32,25 +32,25 @@ const Hero = () => {
               </h1>
             </div>
             
-            <p className="text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-2xl">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Where <span className="text-blue-400 font-semibold">Islamic values</span> meet 
               <span className="text-cyan-400 font-semibold"> cutting-edge innovation</span>. 
               We build tomorrow's technology with today's vision and timeless principles.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
               <Button 
                 onClick={scrollToContact}
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 text-lg font-semibold transition-all duration-300"
+                className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Our Services
@@ -58,18 +58,18 @@ const Hero = () => {
             </div>
             
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-700">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-6 sm:pt-8 border-t border-gray-700">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400">100+</div>
-                <div className="text-gray-400 text-sm">Projects Delivered</div>
+                <div className="text-2xl sm:text-3xl font-bold text-blue-400">100+</div>
+                <div className="text-gray-400 text-xs sm:text-sm">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cyan-400">50+</div>
-                <div className="text-gray-400 text-sm">Happy Clients</div>
+                <div className="text-2xl sm:text-3xl font-bold text-cyan-400">50+</div>
+                <div className="text-gray-400 text-xs sm:text-sm">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-300">5+</div>
-                <div className="text-gray-400 text-sm">Years Experience</div>
+                <div className="text-2xl sm:text-3xl font-bold text-blue-300">5+</div>
+                <div className="text-gray-400 text-xs sm:text-sm">Years Experience</div>
               </div>
             </div>
           </div>
